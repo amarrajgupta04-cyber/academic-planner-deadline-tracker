@@ -2,9 +2,14 @@
 
 This document contains 20 issues designed for an open-source workshop. Issues are categorized by difficulty level to accommodate contributors of all skill levels.
 
+**Distribution:** 
+- 🟢 **10 Beginner Issues** (50%) - Perfect for newcomers
+- 🟡 **6 Intermediate Issues** (30%) - Build on fundamentals  
+- 🔴 **4 Advanced Issues** (20%) - Complex features
+
 ---
 
-## 🟢 BEGINNER ISSUES (Good First Issues)
+## 🟢 BEGINNER ISSUES (10 Issues - Good First Issues)
 
 ### Issue #1: Add Favicon to the Application
 **Difficulty:** Beginner  
@@ -134,11 +139,144 @@ Add a help section or tooltip that shows users the available keyboard shortcuts 
 
 ---
 
-## 🟡 INTERMEDIATE ISSUES
+### Issue #6: Add Empty State Messages and Graphics
+**Difficulty:** Beginner  
+**Labels:** `good first issue`, `beginner`, `ui/ux`  
+**Estimated Time:** 30-45 minutes
+
+**Description:**  
+When users have no deadlines, show a friendly message encouraging them to add one.
+
+**Tasks:**
+- Design empty state message
+- Add illustration or icon
+- Include call-to-action button
+- Style in `css/style.css`
+
+**Learning Outcomes:**
+- User experience design
+- Empty state best practices
+- CSS styling
+
+**Acceptance Criteria:**
+- Shows when no deadlines exist
+- Friendly, encouraging message
+- Clear CTA to add first deadline
+
+---
+
+### Issue #7: Add Loading Animations for Better UX
+**Difficulty:** Beginner  
+**Labels:** `good first issue`, `beginner`, `css`  
+**Estimated Time:** 30-45 minutes
+
+**Description:**  
+Add subtle loading animations when data is being processed.
+
+**Tasks:**
+- Create CSS loading spinner
+- Add skeleton loaders for deadline cards
+- Add fade-in animations for content
+- Keep animations subtle and smooth
+
+**Learning Outcomes:**
+- CSS animations
+- User experience enhancement
+- Performance considerations
+
+**Acceptance Criteria:**
+- Smooth loading transitions
+- No jarring content shifts
+- Works in both themes
+
+---
+
+### Issue #8: Improve Form Validation Messages
+**Difficulty:** Beginner  
+**Labels:** `good first issue`, `beginner`, `javascript`  
+**Estimated Time:** 45-60 minutes
+
+**Description:**  
+Add clearer validation messages when users submit the deadline form.
+
+**Tasks:**
+- Add validation for empty fields
+- Check if deadline date is in the past
+- Show helpful error messages
+- Style error messages
+
+**Learning Outcomes:**
+- Form validation
+- User feedback design
+- JavaScript validation
+
+**Acceptance Criteria:**
+- All required fields validated
+- Warning if deadline is in past
+- Clear, helpful error messages
+- Errors clear when user fixes them
+
+---
+
+### Issue #9: Add Quick Stats Dashboard
+**Difficulty:** Beginner  
+**Labels:** `good first issue`, `beginner`, `javascript`  
+**Estimated Time:** 45-60 minutes
+
+**Description:**  
+Show quick statistics at the top of the dashboard (total deadlines, completed, upcoming).
+
+**Tasks:**
+- Calculate total deadlines
+- Count completed vs pending
+- Count deadlines this week
+- Display in header area
+- Style stat cards
+
+**Learning Outcomes:**
+- Data aggregation
+- Dynamic content updates
+- Dashboard design
+
+**Acceptance Criteria:**
+- Shows: Total, Completed, Upcoming This Week
+- Updates in real-time when deadlines change
+- Responsive design
+
+---
+
+### Issue #10: Add Confirmation Before Deleting Deadlines
+**Difficulty:** Beginner  
+**Labels:** `good first issue`, `beginner`, `javascript`  
+**Estimated Time:** 30-45 minutes
+
+**Description:**  
+Prevent accidental deletions by asking for confirmation.
+
+**Tasks:**
+- Add confirm dialog before delete
+- Show deadline title in confirmation
+- Style confirmation modal
+- Add "Cancel" and "Delete" buttons
+
+**Learning Outcomes:**
+- Modal dialogs
+- User confirmation patterns
+- Preventing data loss
+
+**Acceptance Criteria:**
+- Confirmation required before deleting
+- Shows which deadline will be deleted
+- Can cancel the deletion
+- Delete only happens after confirmation
+
+---
+
+## 🟡 INTERMEDIATE ISSUES (6 Issues)
 
 ### Issue #6: Implement Drag-and-Drop for Deadline Prioritization
 **Difficulty:** Intermediate  
-**Labels:** `intermediate`, `javascript`, `feature`, `enhancement`  
+**Labels:** `intermediate`, `javascript`, `feature`  
 **Estimated Time:** 2-3 hours
 
 **Description:**  
@@ -166,8 +304,8 @@ Allow users to reorder their deadlines by dragging and dropping deadline cards t
 
 ### Issue #7: Add Task Categories/Tags System
 **Difficulty:** Intermediate  
-**Labels:** `intermediate`, `javascript`, `feature`, `enhancement`  
-**Estimated Time:** 3-4 hours
+**Labels:** `intermediate`, `javascript`, `feature`  
+**Estimated Time:** 2-3 hours
 
 **Description:**  
 Implement a tagging system so users can categorize tasks beyond just courses (e.g., "research", "writing", "presentation", "exam").
@@ -195,8 +333,8 @@ Implement a tagging system so users can categorize tasks beyond just courses (e.
 
 ### Issue #8: Implement Dark/Light Theme Animation
 **Difficulty:** Intermediate  
-**Labels:** `intermediate`, `css`, `javascript`, `ui/ux`  
-**Estimated Time:** 2 hours
+**Labels:** `intermediate`, `css`, `javascript`  
+**Estimated Time:** 1-2 hours
 
 **Description:**  
 Add smooth transitions when switching between dark and light themes instead of instant switching.
@@ -252,8 +390,8 @@ Implement browser notifications to remind users about upcoming deadlines. Users 
 
 ### Issue #10: Create Export to Calendar (ICS) Feature
 **Difficulty:** Intermediate  
-**Labels:** `intermediate`, `javascript`, `feature`, `export`  
-**Estimated Time:** 3 hours
+**Labels:** `intermediate`, `javascript`, `feature`  
+**Estimated Time:** 2-3 hours
 
 **Description:**  
 Allow users to export their deadlines as an ICS (iCalendar) file that can be imported into Google Calendar, Outlook, or Apple Calendar.
@@ -279,11 +417,41 @@ Allow users to export their deadlines as an ICS (iCalendar) file that can be imp
 
 ---
 
-## 🔴 ADVANCED ISSUES
+### Issue #11: Enhance Search with Text Highlighting
+**Difficulty:** Intermediate  
+**Labels:** `intermediate`, `javascript`, `feature`  
+**Estimated Time:** 2-3 hours
+
+**Description:**  
+Highlight matching text in search results for better visibility.
+
+**Tasks:**
+- Implement text highlighting algorithm
+- Highlight in title and description
+- Style highlighted text
+- Search across multiple fields
+- Show search result count
+
+**Learning Outcomes:**
+- Text search algorithms
+- DOM manipulation
+- Regular expressions
+- User experience design
+
+**Acceptance Criteria:**
+- Matching text is highlighted
+- Searches title, description, course
+- Case-insensitive search
+- Clear visual highlighting
+- Shows result count
+
+---
+
+## 🔴 ADVANCED ISSUES (4 Issues)
 
 ### Issue #11: Implement Calendar View with Interactive Grid
 **Difficulty:** Advanced  
-**Labels:** `advanced`, `javascript`, `feature`, `calendar`  
+**Labels:** `advanced`, `javascript`, `feature`  
 **Estimated Time:** 5-8 hours
 
 **Description:**  
@@ -316,7 +484,7 @@ Create a fully functional calendar view that displays deadlines on a monthly cal
 
 ### Issue #12: Add Data Visualization for Statistics
 **Difficulty:** Advanced  
-**Labels:** `advanced`, `javascript`, `feature`, `visualization`  
+**Labels:** `advanced`, `javascript`, `visualization`  
 **Estimated Time:** 6-8 hours
 
 **Description:**  
@@ -346,106 +514,9 @@ Implement the Statistics view with charts and graphs showing completion rates, t
 
 ---
 
-### Issue #13: Implement Advanced Search with Filters
+### Issue #13: Add Progressive Web App (PWA) Support
 **Difficulty:** Advanced  
-**Labels:** `advanced`, `javascript`, `feature`, `search`  
-**Estimated Time:** 4-5 hours
-
-**Description:**  
-Enhance the search functionality to include advanced filters: date ranges, multiple priorities, multiple courses, and text search across title and description with highlighting.
-
-**Tasks:**
-- Implement advanced filter UI (modal or sidebar)
-- Add date range picker
-- Allow multi-select for courses and priorities
-- Add search result highlighting
-- Show search result count
-- Save recent searches
-- Add search suggestions
-
-**Learning Outcomes:**
-- Advanced filtering algorithms
-- Complex state management
-- Text highlighting techniques
-- Date range handling
-- UX for complex interactions
-
-**Acceptance Criteria:**
-- Multiple filters can be applied simultaneously
-- Search highlights matching text
-- Date range filtering works correctly
-- Filter state is maintained during session
-- Clear all filters option available
-
----
-
-### Issue #14: Add Recurring Deadlines Feature
-**Difficulty:** Advanced  
-**Labels:** `advanced`, `javascript`, `feature`, `complex`  
-**Estimated Time:** 6-10 hours
-
-**Description:**  
-Implement recurring deadlines for weekly assignments, monthly projects, etc. Users should be able to set recurrence patterns (daily, weekly, monthly) with options for end dates or occurrence counts.
-
-**Tasks:**
-- Design recurrence pattern UI
-- Implement recurrence logic (daily, weekly, monthly, custom)
-- Generate future deadline instances
-- Handle editing and deletion of recurring series
-- Add option to edit single instance vs all instances
-- Store recurrence rules efficiently
-
-**Learning Outcomes:**
-- Complex date calculations
-- Recurrence rule algorithms (similar to iCalendar RRULE)
-- Data modeling for recurring events
-- Complex UI state management
-- Database design for recurring data
-
-**Acceptance Criteria:**
-- Users can create recurring deadlines
-- Multiple recurrence patterns supported
-- Can edit/delete single instance or entire series
-- Recurring deadlines appear correctly on calendar
-- Performance remains good with many recurrences
-
----
-
-### Issue #15: Implement Collaborative Features (Share Courses/Deadlines)
-**Difficulty:** Advanced  
-**Labels:** `advanced`, `javascript`, `feature`, `collaboration`  
-**Estimated Time:** 8-12 hours
-
-**Description:**  
-Add ability to share courses and deadlines with other students via generated links or export codes. This should work without a backend by using encoded data in URLs.
-
-**Tasks:**
-- Implement data serialization and compression
-- Generate shareable links with encoded data
-- Create import functionality from shared links
-- Add UI for sharing (copy link, QR code)
-- Handle large datasets in URLs
-- Add privacy considerations (what data to share)
-
-**Learning Outcomes:**
-- Data serialization techniques
-- URL encoding and compression
-- Cryptographic encoding (Base64, etc.)
-- P2P data sharing concepts
-- Privacy and security considerations
-
-**Acceptance Criteria:**
-- Users can generate shareable links
-- Links can be imported by other users
-- Data integrity is maintained
-- Works with reasonable data sizes
-- Clear privacy information shown
-
----
-
-### Issue #16: Add Progressive Web App (PWA) Support
-**Difficulty:** Advanced  
-**Labels:** `advanced`, `javascript`, `pwa`, `feature`  
+**Labels:** `advanced`, `javascript`, `pwa`  
 **Estimated Time:** 5-7 hours
 
 **Description:**  
@@ -476,137 +547,35 @@ Convert the application into a Progressive Web App so users can install it on th
 
 ---
 
-### Issue #17: Implement Undo/Redo Functionality
+### Issue #14: Implement Recurring Deadlines Feature
 **Difficulty:** Advanced  
-**Labels:** `advanced`, `javascript`, `feature`, `state-management`  
-**Estimated Time:** 6-8 hours
+**Labels:** `advanced`, `javascript`, `feature`  
+**Estimated Time:** 6-10 hours
 
 **Description:**  
-Add undo/redo functionality for all major actions (add, edit, delete tasks and courses) with keyboard shortcuts (Ctrl+Z, Ctrl+Y).
+Implement recurring deadlines for weekly assignments, monthly projects, etc. Users should be able to set recurrence patterns (daily, weekly, monthly) with options for end dates or occurrence counts.
 
 **Tasks:**
-- Implement command pattern for actions
-- Create action history stack
-- Add undo/redo buttons to UI
-- Implement keyboard shortcuts
-- Handle complex scenarios (undo add after edit)
-- Add action history viewer
-- Limit history size for performance
+- Design recurrence pattern UI
+- Implement recurrence logic (daily, weekly, monthly, custom)
+- Generate future deadline instances
+- Handle editing and deletion of recurring series
+- Add option to edit single instance vs all instances
+- Store recurrence rules efficiently
 
 **Learning Outcomes:**
-- Command pattern
-- State history management
-- Keyboard event handling
-- Complex state restoration
-- Memory management
+- Complex date calculations
+- Recurrence rule algorithms (similar to iCalendar RRULE)
+- Data modeling for recurring events
+- Complex UI state management
+- Efficient data storage
 
 **Acceptance Criteria:**
-- Undo/redo works for all major actions
-- Keyboard shortcuts work (Ctrl+Z, Ctrl+Y)
-- UI shows available undo/redo actions
-- History is limited to reasonable size
-- Complex scenarios handled correctly
-
----
-
-### Issue #18: Add Smart Deadline Suggestions Using AI-like Logic
-**Difficulty:** Advanced  
-**Labels:** `advanced`, `javascript`, `feature`, `ai`, `algorithm`  
-**Estimated Time:** 8-10 hours
-
-**Description:**  
-Implement intelligent deadline suggestions based on user patterns, course workload, and time until due date. Suggest optimal times to work on assignments.
-
-**Tasks:**
-- Analyze user's completion patterns
-- Calculate course workload distribution
-- Suggest work sessions based on deadline urgency
-- Consider user's past performance per course
-- Provide "smart schedule" recommendations
-- Add settings for work session preferences
-
-**Learning Outcomes:**
-- Data analysis algorithms
-- Pattern recognition
-- Heuristic algorithms
-- Time-based calculations
-- Machine learning concepts (without external libraries)
-
-**Acceptance Criteria:**
-- System suggests work times for upcoming deadlines
-- Suggestions consider multiple factors
-- User can configure suggestion parameters
-- Suggestions improve with usage
-- Clear explanation for each suggestion
-
----
-
-### Issue #19: Implement Multi-Language Support (i18n)
-**Difficulty:** Advanced  
-**Labels:** `advanced`, `javascript`, `feature`, `internationalization`  
-**Estimated Time:** 6-8 hours
-
-**Description:**  
-Add internationalization support to make the app available in multiple languages (at minimum: English, Spanish, French).
-
-**Tasks:**
-- Create translation file structure
-- Extract all text strings from application
-- Implement language switching mechanism
-- Create translation files for multiple languages
-- Handle date/time formatting for different locales
-- Add language selector in UI
-- Ensure RTL language support
-
-**Learning Outcomes:**
-- Internationalization (i18n) principles
-- Locale handling
-- Text extraction and management
-- Date/time localization
-- RTL layout considerations
-
-**Acceptance Criteria:**
-- At least 3 languages supported
-- Language can be changed in settings
-- All UI text is translated
-- Dates formatted according to locale
-- Language preference persists
-
----
-
-### Issue #20: Build Gamification System with Achievements
-**Difficulty:** Advanced  
-**Labels:** `advanced`, `javascript`, `feature`, `gamification`, `fun`  
-**Estimated Time:** 8-10 hours
-
-**Description:**  
-Add a gamification layer with achievements, streaks, and points to motivate students to stay on top of their deadlines.
-
-**Tasks:**
-- Design achievement system (badges, points)
-- Implement streak tracking (consecutive days with completed tasks)
-- Create achievement unlocking logic
-- Design and build achievements UI
-- Add progress indicators
-- Create achievement notifications
-- Store achievement data
-- Add leaderboard concept (self-competition)
-
-**Learning Outcomes:**
-- Gamification principles
-- Achievement system design
-- Streak calculation algorithms
-- Reward/feedback systems
-- Motivation psychology
-- Animation and celebration effects
-
-**Acceptance Criteria:**
-- Multiple achievements available (15-20 different types)
-- Achievements unlock based on user actions
-- Streak tracking works correctly
-- Visual feedback when achievements unlock
-- Achievement progress is shown
-- System motivates without being annoying
+- Users can create recurring deadlines
+- Multiple recurrence patterns supported
+- Can edit/delete single instance or entire series
+- Recurring deadlines appear correctly on calendar
+- Performance remains good with many recurrences
 
 ---
 
@@ -630,9 +599,11 @@ Add a gamification layer with achievements, streaks, and points to motivate stud
 
 ## 📊 Difficulty Distribution
 
-- **Beginner (5 issues)**: Good for learning basics
-- **Intermediate (5 issues)**: Build on fundamentals
-- **Advanced (10 issues)**: Complex features for experienced developers
+- **🟢 Beginner (10 issues - 50%)**: Perfect for learning basics and getting started
+- **🟡 Intermediate (6 issues - 30%)**: Build on fundamentals with more complex features
+- **🔴 Advanced (4 issues - 20%)**: Complex features for experienced developers
+
+This balanced distribution ensures that newcomers have plenty of accessible entry points while still providing challenging work for experienced contributors.
 
 ## 🎯 Workshop Tips
 
